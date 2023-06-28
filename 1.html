@@ -1,0 +1,67 @@
+<html  lang =" pt-br " >
+
+<cabeça >
+    <meta  charset =" UTF-8 " >
+    <meta  name =" janela de visualização " conteúdo =" largura=largura do dispositivo, escala inicial=1,0 " >
+    <title > Desafio-araya </ title >
+
+    <script> _ _
+    
+       
+
+       função  resp ( )  {
+        
+            deixe  n  =  documento . querySelector ( '#nome' )
+            deixe  i  =  documento . querySelector ( '#idade' )
+            deixe  l  =  documento . querySelector ( '#ling' )
+            deixe  x  =  ( n . valor )
+            deixe  y  =  ( i . valor )
+            deixe  z  =  ( l . valor )
+
+            alert ( `Oi ${ x } , sua idade e de ${ y } anos e você gosta de estudar ${ z } ` )
+       }
+
+        /*let nome = window.prompt("Qual nome seu?")
+        let idade = window.prompt('Qual sua idade ?')
+        let ling = window.prompt("Qual Linguagem você está estudando ?")
+        let saida = `Oi ${nome} tudo certo ? Sua idade é de ${idade} anos e a linguagem que você está estudando atualmente é ${ling}`
+        alert(`Oi ${nome} tudo certo ? Sua idade é de ${idade} anos e a linguagem que você está estudando atualmente é ${ling}`)
+        document.writeln(saida)*/
+
+        função  soma ( )  {
+            deixe  t1  =  documento . querySelector ( '#txtn1' )
+            deixe  t2  =  documento . querySelector ( '#txtn2' )
+            deixe  n1  =  Número ( t1 . valor )
+            deixe  n2  =  Número ( t2 . valor )
+            deixe  s =  documento . querySelector ( '#saida' )
+            deixe  soma  =  n1  +  n2
+            s . innerHTML  =  soma
+            
+
+        }
+    </ script >
+</ cabeça >
+
+< corpo >
+    < h1  id =" teste " > botafogo </ h1 >
+    < br >
+    <strong> < label for = " nome " > Qual ​​seu Nome ? </ label > < br > 
+        < input  type =" text " id =" nome " > < br >
+
+        < label  for =" idade " > Quantos anos você tem ? </ label > < br >
+        < input  type =" text " id =" idade " > < br >
+
+        < label  for =" ling " > Qual linguagem de programação você está estudando ? </ label > < br >
+        < input  type =" text " id =" ling " > < br > </ strong >
+
+    < input  type =" botão " value =" Enviar " onclick =" resp() " >
+
+
+    < h2 > calculadora </ h2 >
+
+    < tipo de entrada  =" número " nome =" txtn1 " id =" txtn1 " > +
+    < tipo de entrada  =" número " nome =" txtn2 " id =" txtn2 " > < br >
+    < tipo de entrada  =" botão " valor =" Somar " onclick =" soma() " >
+    < div  id =" saida " > Resposta: </ div >
+
+</ corpo >
